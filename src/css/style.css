@@ -1,0 +1,104 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../image/bg-repeat.jpg);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 60px;
+}
+
+.conteudo h1{
+    font-weight: 900;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-bottom: 15px;
+    width: 300px;
+}
+
+.conteudo p{
+    font-weight: 400;
+    font-size: 15px;
+    color: #FFFFFF;
+    width: 300px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 378px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+form .obrigatorio{
+    font-size: 8px;
+    font-weight: 400;
+    color: #F52E2E;
+    margin-left: 20px;
+    display: none;
+}
+
+form .input{
+    width: 300px;
+    height: 35px;
+    margin-top: 15px;
+    padding: 9px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 15px;
+    align-self: center;
+}
+
+form .input.msg{
+    width: 300px;
+    height: 100px;
+    margin-top: 15px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 9px;
+    font-weight: 400;
+    font-size: 15px;
+    align-self: center;
+}
+
+form span{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin: 15px
+}
+
+form a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFFFFF;    
+}
+
+.btn{
+    width: 300px;
+    height: 45px;
+    align-self: center;
+    background-color: #3CCC87;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 22px;
+}
+
+/* .obrigatorio{
+    border: 1px solid #F52E2E;
+    border-radius: 5px;
+} */
+
+/* .preenchido{
+    border: 1px solid #00C22B;
+    border-radius: 5px;
+} */
