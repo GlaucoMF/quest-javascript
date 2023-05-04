@@ -1,5 +1,5 @@
 .container{
-    background-image: url(../imagens/bg-repeat.jpg);
+    background-image: url(../image/bg-repeat.jpg);
     background-size: contain;
     height: 100vh;
     display: flex;
