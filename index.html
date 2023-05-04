@@ -16,28 +16,35 @@
 
 <body>
 
-    <main>
-
-        <section class="conteudo">
-            <h1>FICOU COM DÚVIDA?,<br/>NOS MANDE UMA MENSAGEM!</h1>
-            <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
-        </section>
-
-        <form action="#" class="formulario" id="formulario">
-
-            <input class="input nome" type="text" name="nome" placeholder="Nome completo*">
-            <p class="obrigatorio">campo obrigatório</p>
-            <input class="input email" type="text" name="email" placeholder="Email*">
-            <p class="obrigatorio">campo obrigatório</p>
-            <input class="input telefone" type="text" name="telefone" placeholder="Telefone*">
-            <p class="obrigatorio">campo obrigatório</p>
-            <input class="input msg mensagem" name="mensagem" cols="30" rows="10" placeholder="Mensagem*">
-            <p class="obrigatorio">campo obrigatório</p>
-            <span>* Campos obrigatórios</span>
-            <a href="" class="enviar btn" id="btn">Enviar</a>
-
-        </form>
-
+    <main class="container">
+        <div class="informacoes">
+            <h1 class="titulo">FICOU COM DÚVIDA? <br>NOS MANDE UMA MENSAGEM!</h1>
+            <p class="paragrafo">
+                caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.
+            </p>
+        </div>
+        <div class="card">
+            <form action="#" method="post" class="form">
+                <div class="opcoes">
+                    <input type="text" required placeholder="Nome Completo *" class="inputs">
+                    <span class="alerta">campo obrigatório</span>
+                </div>
+                <div class="opcoes">
+                    <input type="email" required placeholder="Email *" class="inputs">
+                    <span class="alerta">campo obrigatório</span>
+                </div>
+                <div class="opcoes">
+                    <input type="tel" required placeholder="Telefone *" class="inputs">
+                    <span class="alerta">campo obrigatório</span>
+                </div>
+                <div class="opcoes">
+                    <textarea required placeholder="Mensagem *" class="inputs mensagem"></textarea>
+                    <span class="alerta">campo obrigatório</span>
+                </div>
+                <p><strong>*campos obrigatórios</strong></p>
+                <input type="submit" value="Enviar" class="botao-enviar">
+            </form> 
+        </div>
     </main>
 
     <script src="./src/js/index.js"></script>

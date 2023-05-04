@@ -1,23 +1,18 @@
-let botaoEnviar = document.getElementsByClassName('enviar');
-    botaoEnviar[0].addEventListener('click', function(event) {
-      event.preventDefault();
-  
-      let campos = document.getElementsByClassName('input');
+const botao = document.querySelector('.botao-enviar')
 
-      let obrigatorio = document.getElementsByClassName ("obrigatorio")
-      let inputObrigatorio = obrigatorio[0]
-      
-      for (let i = 0; i < campos.length; i++) {
-        let campoInput = campos[i];
-        let campoDigitado = campoInput.value;
-        let mensagem = campoInput.nextElementSibling;
+botao.addEventListener('click', function(){
+    const divs = document.querySelectorAll('.opcoes')
+    divs.forEach(function(item){
 
-        if (campoDigitado === '') {
-          campoInput.style.borderColor = '#f52e2e';
-          mensagem.classList.add('nao-preenchido')
-        } else {
-          campoInput.style.borderColor = '#00c22b';
-          mensagem.classList.remove('nao-preenchido')
+        let fchild = item.firstElementChild
+        let lchild = item.lastElementChild
+
+        if(fchild.value == ""){
+            fchild.style.border = '1px solid #F52E2E'
+            lchild.style.visibility = 'visible'
+        }else{
+            fchild.style.border = '1px solid #00C22B'
+            lchild.style.visibility = 'hidden'
         }
-      }
     })
+})
